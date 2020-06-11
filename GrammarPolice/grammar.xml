@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Grammar xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <!--
+        NOTE: Your callsign from SmartDispatcher.ini will automatically be added as a preface, along with
+        an empty string.  This effectively makes the preface optional when talking to the dispatcher.
+    -->
+    <Prefaces>
+        <string>copy</string>
+        <string>copy dispatch</string>
+        <string>copy that</string>
+        <string>copy that dispatch</string>
+        <string>dispatch</string>
+    </Prefaces>
+
+    <!-- These commands do not require any options and are used to accept a callout -->
+    <AcceptCommands>
+        <string>en route</string>
+        <string>I'll check it out</string>
+        <string>on my way</string>
+        <string>responding</string>
+    </AcceptCommands>
+
+    <AdviseCommands>
+        <string>be advised</string>
+    </AdviseCommands>
+
+    <!-- These commands to not require any options and are used to call a lot of backup -->
+    <PanicCommands>
+        <string>code ninety nine</string>
+        <string>eleven ninety nine</string>
+        <string>shots fired</string>
+        <string>shots fired shots fired</string>
+    </PanicCommands>
+
+    <!-- Any combination of command and option phrase associated will cause the action to trigger -->
+    <Request>
+        <Commands>
+            <string>can I get a</string>
+            <string>code</string>
+            <string>I need</string>
+            <string>I need a</string>
+            <string>I need an</string>
+            <string>I need some</string>
+            <string>request</string>
+            <string>requesting</string>
+            <string>roll me</string>
+            <string>send</string>
+            <string>we need</string>
+        </Commands>
+        <Options>
+            <Option>
+                <Action>air</Action>
+                <Phrases>
+                    <string>air support</string>
+                    <string>air units</string>
+                </Phrases>
+            </Option>
+            <Option>
+                <Action>animal</Action>
+                <Phrases>
+                    <string>animal control</string>
+                </Phrases>
+            </Option>
+            <Option>
+                <Action>code_2</Action>
+                <Phrases>
+                    <string>code two</string>
+                    <string>code two backup</string>
+                    <string>two</string>
+                </Phrases>
+            </Option>
+            <Option>
+                <Action>code_3</Action>
+                <Phrases>
+                    <string>additional backup</string>
+                    <string>additional units</string>
+                    <string>backup</string>
+                    <string>code three</string>
+                    <string>code three backup</string>
+                    <string>three</string>
+                </Phrases>
+            </Option>
+            <Option>
+                <Action>code_4</Action>
+                <Phrases>
+                    <string>code four</string>
+                    <string>four</string>
+                </Phrases>
+            </Option>
+  	        <Option>
+                <Action>coroner</Action>
+                <Phrases>
+                    <string>coroner</string>
+                    <string>C S I</string>
+                </Phrases>
+            </Option>
+            <Option>
+                <Action>ems</Action>
+                <Phrases>
+                    <string>ambulance</string>
+                    <string>E M S</string>
+                    <string>paramedic</string>
+                    <string>paramedics</string>
+                </Phrases>
+            </Option>
+            <Option>
+                <Action>female</Action>
+                <Phrases>
+                    <string>female</string>
+                    <string>female officer</string>
+                </Phrases>
+            </Option>
+            <Option>
+                <Action>fire</Action>
+                <Phrases>
+                    <string>fire</string>
+                    <string>fire department</string>
+                </Phrases>
+            </Option>
+            <Option>
+                <Action>k9</Action>
+                <Phrases>
+                    <string>kay nine</string>
+                    <string>kay nine unit</string>
+                </Phrases>
+            </Option>
+            <Option>
+                <Action>tow</Action>
+                <Phrases>
+                    <string>tow</string>
+                    <string>tow truck</string>
+                </Phrases>
+            </Option>
+            <Option>
+                <Action>transport</Action>
+                <Phrases>
+                    <string>prisoner transport</string>
+                    <string>transport</string>
+                </Phrases>
+            </Option>
+  	        <Option>
+                <Action>pedcheck</Action>
+                <Phrases>
+                    <string>ped check</string>
+                    <string>pedestrian check</string>
+                </Phrases>
+            </Option>
+  	        <Option>
+                <Action>platecheck</Action>
+                <Phrases>
+                    <string>license plate</string>
+                    <string>plate check</string>
+         	    </Phrases>
+            </Option>
+  	        <Option>
+                <Action>roadblock</Action>
+                <Phrases>
+                    <string>road block</string>
+         	    </Phrases>
+            </Option>
+  	        <Option>
+                <Action>spikestrips</Action>
+                <Phrases>
+                    <string>spikes</string>
+                    <string>spike strips</string>
+         	    </Phrases>
+            </Option>
+        </Options>
+    </Request>
+
+    <!-- Any combination of command and option phrase associated will cause the action to trigger -->
+    <Status>
+        <Commands>
+            <string>going</string>
+            <string>I'm going</string>
+            <string>I am</string>
+            <string>I am going</string>
+            <string>show me</string>
+            <string>show us</string>
+            <string>ten</string>
+            <string>we are</string>
+            <string>we are going</string>
+        </Commands>
+        <Options>
+            <Option>
+                <Action>accept</Action>
+                <Phrases>
+                    <string>en route</string>
+                    <string>on my way</string>
+                    <string>responding</string>
+                </Phrases>
+            </Option>
+            <Option>
+                <Action>available</Action>
+                <Phrases>
+                    <string>available</string>
+                    <string>available for calls</string>
+                    <string>eight</string>
+                    <string>ten eight</string>
+                </Phrases>
+            </Option>
+            <Option>
+                <Action>busy</Action>
+                <Phrases>
+                    <string>out of service</string>
+                    <string>seven</string>
+                    <string>ten seven</string>
+                </Phrases>
+            </Option>
+            <Option>
+                <Action>code_4</Action>
+                <Phrases>
+                    <string>code four</string>
+                </Phrases>
+            </Option>
+            <Option>
+                <Action>scene</Action>
+                <Phrases>
+                    <string>on scene</string>
+                </Phrases>
+            </Option>
+            <Option>
+                <Action>startpatrol</Action>
+                <Phrases>
+                    <string>forty one</string>
+                    <string>forty one ten eight</string>
+                    <string>on patrol</string>
+                    <string>starting patrol</string>
+                    <string>ten forty one</string>
+                    <string>ten forty one ten eight</string>
+                </Phrases>
+            </Option>
+            <Option>
+                <Action>traffic</Action>
+                <Phrases>
+                    <string>on a traffic stop</string>
+                    <string>on a stop</string>
+                </Phrases>
+            </Option>
+        </Options>
+    </Status>
+</Grammar>

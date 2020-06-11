@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PoliceSmartRadio>
+  <!--PoliceSmartRadio by Albo1125.
+PoliceSmartRadio Customisation Video Tutorial: https://www.youtube.com/watch?v=aJPA_nIEZxo
+<Button> tags will automatically be added if a plugin tries to assign itself to a button. You can choose whether to enable that button or not.
+The buttons are shown ingame in the order entered here.
+You can add as many <Button> tags as you like, they'll be sorted into pages based on the value in the DisplayPositioning.ini file.
+The <Plugin> value MUST correspond to the plugin name assigning an action to the button. It also determines which folder the textures are loaded from (see <Name> explanation).
+The <Name> value MUST correspond to the name of a png file in either the PoliceSmartRadio/Display/On/Plugin or PoliceSmartRadio/Display/Off/Plugin folders.
+The <Enabled> values MUST be either 'true' or 'false' (without quotation marks). It determines if the button is shown ingame.-->
+  <Button>
+    <Plugin>PoliceSmartRadio</Plugin>
+    <Name>pit</Name>
+    <Enabled>False</Enabled>
+  </Button>
+  <Button>
+    <Plugin>PoliceSmartRadio</Plugin>
+    <Name>platecheck</Name>
+    <Enabled>False</Enabled>
+  </Button>
+  <Button>
+    <Plugin>PoliceSmartRadio</Plugin>
+    <Name>panic</Name>
+    <Enabled>False</Enabled>
+  </Button>
+  <Button>
+    <Plugin>UltimateBackup</Plugin>
+    <Name>panic</Name>
+    <Enabled>False</Enabled>
+  </Button>
+  <Button>
+    <Plugin>PoliceSmartRadio</Plugin>
+    <Name>pedcheck</Name>
+    <Enabled>False</Enabled>
+  </Button>
+  <Button>
+    <Plugin>PoliceSmartRadio</Plugin>
+    <Name>endcall</Name>
+    <Enabled>False</Enabled>
+  </Button>
+  <Button>
+    <Plugin>StopThePed</Plugin>
+    <Name>transport</Name>
+    <Enabled>False</Enabled>
+  </Button>
+  <Button>
+    <Plugin>StopThePed</Plugin>
+    <Name>coroner</Name>
+    <Enabled>False</Enabled>
+  </Button>
+  <Button>
+    <Plugin>UltimateBackup</Plugin>
+    <Name>trafficstop</Name>
+    <Enabled>False</Enabled>
+  </Button>
+  <Button>
+    <Plugin>StopThePed</Plugin>
+    <Name>tow</Name>
+    <Enabled>False</Enabled>
+  </Button>
+  <Button>
+    <Plugin>StopThePed</Plugin>
+    <Name>insurance</Name>
+    <Enabled>False</Enabled>
+  </Button>
+  <Button>
+    <Plugin>StopThePed</Plugin>
+    <Name>animal</Name>
+    <Enabled>False</Enabled>
+  </Button>
+  <Button>
+    <Plugin>UltimateBackup</Plugin>
+    <Name>felonystop</Name>
+    <Enabled>False</Enabled>
+  </Button>
+  <Button>
+    <Plugin>UltimateBackup</Plugin>
+    <Name>k9backup</Name>
+    <Enabled>False</Enabled>
+  </Button>
+  <Button>
+    <Plugin>UltimateBackup</Plugin>
+    <Name>spikestrips</Name>
+    <Enabled>False</Enabled>
+  </Button>
+  <Button>
+    <Plugin>UltimateBackup</Plugin>
+    <Name>roadblock</Name>
+    <Enabled>False</Enabled>
+  </Button>
+  <Button>
+    <Plugin>UltimateBackup</Plugin>
+    <Name>female</Name>
+    <Enabled>False</Enabled>
+  </Button>
+  <Button>
+    <Plugin>UltimateBackup</Plugin>
+    <Name>groupbackup</Name>
+    <Enabled>False</Enabled>
+  </Button>
+  <Button>
+    <Plugin>UltimateBackup</Plugin>
+    <Name>ambulance</Name>
+    <Enabled>False</Enabled>
+  </Button>
+  <Button>
+    <Plugin>UltimateBackup</Plugin>
+    <Name>firedept</Name>
+    <Enabled>False</Enabled>
+  </Button>
+</PoliceSmartRadio>
